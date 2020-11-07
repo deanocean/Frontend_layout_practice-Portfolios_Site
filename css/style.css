@@ -1,0 +1,347 @@
+/* ---------- layout ---------- */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.clearFix:after {
+  clear: both;
+  display: block;
+  content: "";
+  height: 0;
+  line-height: 0;
+}
+
+.pos-relative {
+  position: relative;
+}
+
+.pos-absolute {
+  position: relative;
+}
+
+/* ---------- font ---------- */
+.fz-small {
+  font-size: 20px;
+}
+
+.fz-base {
+  font-size: 24px;
+}
+
+.fz-large {
+  font-size: 64px;
+}
+
+.f-style-normal {
+  font-style: normal;
+}
+
+/* ---------- color ---------- */
+.color-white {
+  color: #fff;
+}
+
+.color-black {
+  color: #000;
+}
+
+/* ---------- background ---------- */
+.bg-black {
+  background-color: #000;
+}
+
+/* ---------- others ---------- */
+.ext-pos-center, .ext-has-pseudo-center::before, .ext-has-pseudo-center::after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.ext-bgi, .l-heroheader {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.ext-has-pseudo, .ext-has-pseudo-center, .ext-has-pseudo-bgi {
+  position: relative;
+}
+
+.ext-has-pseudo::before, .ext-has-pseudo-center::before, .ext-has-pseudo-bgi::before, .ext-has-pseudo::after, .ext-has-pseudo-center::after, .ext-has-pseudo-bgi::after {
+  content: "";
+  display: block;
+}
+
+.ext-has-pseudo-bgi::before, .ext-has-pseudo-bgi::after {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  font-family: 'Roboto', 'Noto Sans TC', "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+}
+
+/*
+Roboto
+    light: 300
+    regular: 400
+    medium: 500
+
+Noto Sans TC
+    light: 300
+    regular: 400
+    medium: 500
+
+*/
+body {
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+}
+
+.container {
+  padding-top: 64px;
+}
+
+.l-heroheader {
+  height: 100vh;
+  background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png);
+  color: #fff;
+}
+
+.l-heroheader h1 {
+  font-size: 80px;
+  font-weight: 900;
+}
+
+.l-heroheader h1 .sub {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  display: block;
+}
+
+.l-heroheader .lead {
+  margin-top: 32px;
+  text-align: left;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.l-heroheader .iconList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 48px;
+}
+
+.l-heroheader .iconList .item {
+  margin-right: 16px;
+}
+
+.heading {
+  font-size: 64px;
+  font-weight: 500;
+}
+
+.l-about {
+  padding-bottom: 56px;
+  font-weight: 700;
+}
+
+.l-about .avator {
+  margin: 40px auto 0;
+}
+
+.l-about .info {
+  margin-top: 24px;
+}
+
+.l-about .list {
+  margin: 24px auto 0;
+  border-top: 1px solid #000;
+  width: 384px;
+}
+
+.l-about .list .item {
+  margin-top: 32px;
+  display: inline-block;
+  padding-left: 16px;
+  position: relative;
+}
+
+.l-about .list .item::before {
+  content: '';
+  position: absolute;
+  left: -22px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #891818;
+}
+
+.l-brand .subtitle {
+  margin-top: 16px;
+}
+
+.l-brand .subscription {
+  margin-top: 32px;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.l-brand .photos {
+  margin-top: 68px;
+  padding-bottom: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.l-brand .photos img {
+  margin-top: 40px;
+}
+
+.l-brand .photos img:first-child {
+  margin-top: 0;
+}
+
+.l-brand .photos img:last-child {
+  margin-left: auto;
+}
+
+.l-otherWorks {
+  padding-bottom: 160px;
+}
+
+.l-otherWorks .subscription {
+  margin-top: 24px;
+  font-size: 20px;
+  font-style: normal;
+}
+
+.l-otherWorks .works {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.l-otherWorks .works .item {
+  margin-top: 56px;
+}
+
+.l-otherWorks .works .caption {
+  margin-top: 16px;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.footer {
+  padding: 64px 0 80px;
+}
+
+.footer a {
+  color: #fff;
+}
+
+.footer .item {
+  margin-top: 16px;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,60 @@
+
+/* ---------- layout ---------- */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.clearFix:after {
+    clear: both;
+    display: block;
+    content: "";
+    height: 0;
+    line-height: 0;
+}
+
+.pos-relative {
+    position: relative;
+}
+
+.pos-absolute {
+    position: relative;
+}
+
+
+/* ---------- font ---------- */
+.fz-small {
+    font-size: $fz-small;    
+}
+
+.fz-base {
+    font-size: $fz-base;    
+}
+
+.fz-large {
+    font-size: $fz-large;    
+}
+
+.f-style-normal {
+    font-style: normal;
+}
+
+
+/* ---------- color ---------- */
+.color-white {
+    color: #fff;
+}
+
+.color-black {
+    color: #000;
+}
+
+
+/* ---------- background ---------- */
+.bg-black {
+    background-color: #000;
+}
+
+
+/* ---------- others ---------- */
+

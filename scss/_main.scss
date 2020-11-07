@@ -1,0 +1,138 @@
+body {
+    font-size: $fz-base;
+    font-style: italic;
+    text-align: center;
+}
+
+.container {
+    padding-top: 64px;
+}
+
+.l-heroheader {
+    @extend .ext-bgi;
+    height: 100vh;
+    background-image: url(https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/banner.png);
+    color: #fff;
+    h1 {
+        font-size: $fz-giant;
+        font-weight: $fw-black;
+        .sub {
+            font-size: $fz-base;
+            font-weight: $fw-bold;
+            text-align: left;
+            display: block;
+        }
+    }
+    .lead {
+        margin-top: 32px;
+        text-align: left;
+        font-weight: $fw-bold;
+        display: inline-block;
+    }
+    .iconList {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 48px;
+        .item {
+            margin-right: 16px;
+        }
+    }
+}
+
+.heading {
+    font-size: $fz-large;
+    font-weight: $fw-medium;
+}
+
+.l-about {
+    padding-bottom: 56px;
+    font-weight: $fw-bold;
+    .avator {
+        margin: 40px auto 0;
+    }
+    .info {
+        margin-top: 24px;
+    }
+    .list {
+        margin: 24px auto 0;
+        border-top: 1px solid #000;
+        width: 384px;
+        .item {
+            margin-top: 32px;
+            display: inline-block;
+            padding-left: 16px;
+            position: relative;
+            &::before {
+                content: '';   
+                position: absolute;
+                left: -22px;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 22px;
+                height: 22px;
+                border-radius: 50%;
+                background-color: $color-main;
+            }
+        }
+    }
+}
+
+.l-brand {
+    .subtitle {
+        margin-top: 16px;
+    }
+    .subscription {
+        margin-top: 32px;
+        font-style: normal;
+        font-size: $fz-small;
+    }
+    .photos {
+        margin-top: 68px;
+        padding-bottom: 160px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        img {
+            margin-top: 40px;
+            &:first-child {
+                margin-top: 0;
+            }
+            &:last-child {
+               margin-left: auto; 
+            }
+        }
+    }
+}
+
+.l-otherWorks {
+    padding-bottom: 160px;
+    .subscription {
+        margin-top: 24px;
+        font-size: $fz-small;
+        font-style: normal;
+    }
+    .works {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .item {
+            margin-top: 56px;
+        }
+        .caption {
+            margin-top: 16px;
+            font-style: normal;
+            font-size: $fz-small;
+            font-weight: $fw-bold;
+        }
+    }
+}
+
+.footer {
+    padding: 64px 0 80px;
+    a {
+        color: #fff;
+    }
+    .item {
+        margin-top: 16px;
+    }
+}
