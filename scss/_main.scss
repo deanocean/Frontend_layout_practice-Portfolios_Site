@@ -34,7 +34,10 @@ body {
         justify-content: space-between;
         margin-top: 48px;
         .item {
-            margin-right: 16px;
+            transition: transform .3s;
+            &:hover {
+                transform: scale(1.1);
+            }
         }
     }
 }
@@ -92,7 +95,7 @@ body {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        img {
+        li {
             margin-top: 40px;
             &:first-child {
                 margin-top: 0;
@@ -131,6 +134,22 @@ body {
     padding: 64px 0 80px;
     a {
         color: #fff;
+        position: relative;
+        &:after {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -.3em;
+            content: "";
+            border-bottom: 3px solid #fff;
+            transform: scaleX(0);
+            transform-origin: 100% 50%;
+            transition: transform .25s ease-in-out;
+        }
+        &:hover:after {
+            transform: scaleX(1);
+            transform-origin: 0% 50%;
+        }
     }
     .item {
         margin-top: 16px;
